@@ -9,8 +9,9 @@ Capture-to-Analysis pipeline
 ## 1. Flight Plan & Mission Strategy
 To ensure high-quality data, the drone must follow a Double-Grid or Serpentine pattern with specific overlap settings to allow for accurate photogrammetry.
 Mission Parameters:
-1. Altitude: 60–100 meters (Balance between resolution and battery life).
-2. 2. Overlap: 75% Frontal / 70% Side (Essential for stitching images without "tearing").
+•	Altitude: 60–100 meters (Balance between resolution and battery life).
+
+•	Overlap: 75% Frontal / 70% Side (Essential for stitching images without "tearing").
 
 •	Speed: 5–8 m/s (To prevent motion blur).
 
@@ -40,10 +41,15 @@ Raw data from a drone is just a collection of JPGs or TIFs. We must convert them
 The primary tool for crop health is the Normalized Difference Vegetation Index (NDVI). It measures the difference between near-infrared (which plants reflect) and red light (which plants absorb).
  
 Sample Analysis Output Interpretation:
+
 •	Value 0.8 – 1.0 (Dark Green): Very healthy, dense canopy.
+
 •	Value 0.3 – 0.7 (Yellow/Light Green): Moderate stress, potentially nutrient-deficient or early-stage disease.
+
 •	Value 0.0 – 0.2 (Red/Brown): Bare soil, dead vegetation, or severe water stress.
+
 Insight: If a specific corner of the field shows a 0.4 NDVI while the rest is 0.8, the farmer can "ground-truth" that exact GPS coordinate instead of scouting the entire 50 acres.
+
 
 ![dron-2](https://github.com/user-attachments/assets/48b9014a-d5c6-44ca-a046-8f12b510c60a)
 
