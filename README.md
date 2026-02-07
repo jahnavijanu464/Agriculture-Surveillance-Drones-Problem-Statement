@@ -10,10 +10,15 @@ Capture-to-Analysis pipeline
 To ensure high-quality data, the drone must follow a Double-Grid or Serpentine pattern with specific overlap settings to allow for accurate photogrammetry.
 Mission Parameters:
 •	Altitude: 60–100 meters (Balance between resolution and battery life).
+
 •	Overlap: 75% Frontal / 70% Side (Essential for stitching images without "tearing").
+
 •	Speed: 5–8 m/s (To prevent motion blur).
+
 •	Camera Angle: Nadir (90° straight down).
+
 •	Time of Day: 10:00 AM – 2:00 PM (To minimize shadows that skew health indices).
+
 Flight Plan Diagram Logic: The drone starts at a home point, traverses the field in parallel lines, and performs a "return to home" (RTH) once the polygon is fully mapped.
  
 ![drone_1](https://github.com/user-attachments/assets/184e1f1b-52ed-4666-ad5b-6c648acf52e6)
@@ -40,6 +45,7 @@ Sample Analysis Output Interpretation:
 •	Value 0.3 – 0.7 (Yellow/Light Green): Moderate stress, potentially nutrient-deficient or early-stage disease.
 •	Value 0.0 – 0.2 (Red/Brown): Bare soil, dead vegetation, or severe water stress.
 Insight: If a specific corner of the field shows a 0.4 NDVI while the rest is 0.8, the farmer can "ground-truth" that exact GPS coordinate instead of scouting the entire 50 acres.
+
 ![dron-2](https://github.com/user-attachments/assets/48b9014a-d5c6-44ca-a046-8f12b510c60a)
 
  
