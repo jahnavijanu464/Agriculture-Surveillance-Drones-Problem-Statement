@@ -9,9 +9,8 @@ Capture-to-Analysis pipeline
 ## 1. Flight Plan & Mission Strategy
 To ensure high-quality data, the drone must follow a Double-Grid or Serpentine pattern with specific overlap settings to allow for accurate photogrammetry.
 Mission Parameters:
-•	Altitude: 60–100 meters (Balance between resolution and battery life).
-
-•	Overlap: 75% Frontal / 70% Side (Essential for stitching images without "tearing").
+1. Altitude: 60–100 meters (Balance between resolution and battery life).
+2. 2. Overlap: 75% Frontal / 70% Side (Essential for stitching images without "tearing").
 
 •	Speed: 5–8 m/s (To prevent motion blur).
 
